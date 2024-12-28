@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Components</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="bg-white h-16 flex items-center fixed top-0 w-full fixed-nav duration-500"
+    >
+      <div
+        class="container m-auto text-black flex justify-between items-center"
+      >
+        <div class="logo flex justify-center items-center">
+          <a class="p-4" href="#">NavBar</a>
+        </div>
+        <div class="tools sm:flex gap-10 items-center text-sm hidden">
+          <div class="links flex gap-6">
+            <a
+              class="py-3 duration-200 after:bg-black underline-animation relative"
+              href="#"
+              >Home</a
+            >
+            <a
+              class="py-3 duration-200 after:bg-black underline-animation relative"
+              href="#"
+              >About</a
+            >
+            <a
+              class="py-3 duration-200 after:bg-black underline-animation relative"
+              href="#"
+              >Contact</a
+            >
+          </div>
+          <div class="btns flex items-center gap-3">
+            <button
+              class="px-8 py-2 border-black border-2 font-bold rounded-lg hover:border-slate-900 hover:bg-slate-900 hover:text-white duration-200"
+            >
+              Sign Up
+            </button>
+            <button
+              class="px-8 py-2 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+            >
+              Log In
+            </button>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer burger-icon w-5 h-4 duration-500 transition sm:hidden block"
+        >
+          <ul class="relative h-full w-full">
+            <li class="h-[2px] w-full bg-black"></li>
+            <li class="h-[2px] w-full bg-black"></li>
+            <li
+              class="h-[2px] self-start w-full scale-x-50 bg-black duration-500 transition"
+            ></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="burger-links fixed w-full h-full top-16 flex-col bg-slate-900 text-white items-center text-center"
+    >
+      <a
+        class="w-full before:absolute font-bold before:bottom-[5px] before:left-0 before:bg-slate-600 before:w-full before:h-[2px] py-7 duration-200 after:bg-white underline-animation relative"
+        href="#"
+        >Home</a
+      >
+      <a
+        class="w-full before:absolute font-bold before:bottom-[5px] before:left-0 before:bg-slate-600 before:w-full before:h-[2px] py-7 duration-200 after:bg-white underline-animation relative"
+        href="#"
+        >About</a
+      >
+      <a
+        class="w-full before:absolute font-bold before:bottom-[5px] before:left-0 before:bg-slate-600 before:w-full before:h-[2px] py-7 duration-200 after:bg-white underline-animation relative"
+        href="#"
+        >Contact</a
+      >
+    </div>
+    <div
+      class="landing-page bg-slate-900 text-white flex flex-col min-h-screen"
+    >
+      <nav class="bg-transparent h-16 flex items-center">
+        <div
+          class="container m-auto text-white flex justify-between items-center"
+        >
+          <div class="logo flex justify-center items-center">
+            <a class="p-4" href="#">NavBar</a>
+          </div>
+          <div class="tools sm:flex gap-10 items-center text-sm hidden">
+            <div class="links flex gap-6">
+              <a
+                class="py-3 duration-200 after:bg-white underline-animation relative"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="py-3 duration-200 after:bg-white underline-animation relative"
+                href="#"
+                >About</a
+              >
+              <a
+                class="py-3 duration-200 after:bg-white underline-animation relative"
+                href="#"
+                >Contact</a
+              >
+            </div>
+            <div class="btns flex items-center gap-3">
+              <button
+                class="px-8 py-2 border-white border-2 font-bold rounded-lg hover:bg-white hover:text-slate-900 duration-200"
+              >
+                Sign Up
+              </button>
+              <button
+                class="px-8 py-2 border-white border-2 font-bold rounded-lg bg-white text-slate-900"
+              >
+                Log In
+              </button>
+            </div>
+          </div>
+          <div
+            class="cursor-pointer burger-icon w-5 h-4 duration-500 transition sm:hidden block"
+          >
+            <ul class="relative h-full w-full">
+              <li class="h-[2px] w-full bg-white"></li>
+              <li class="h-[2px] w-full bg-white"></li>
+              <li
+                class="h-[2px] self-start w-full scale-x-50 bg-white duration-500 transition"
+              ></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container m-auto flex flex-1 justify-center items-center">
+        <div class="description flex flex-col justify-center w-4/5 xl:w-3/5">
+          <h1 class="text-4xl font-bold text-center">
+            Welcome to Project Components
+          </h1>
+          <p class="text-lg text-center mt-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+            lectus non nunc consectetur elementum. Donec in purus vel velit
+            malesuada fermentum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="items-section min-h-screen">
+      <div class="container m-auto flex justify-center items-center">
+        <div
+          class="items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-16 gap-y-16 justify-items-center sm:gap-6 xl:w-4/5"
+        >
+          <div
+            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+          >
+            <div class="img">
+              <img src="./assets/1.jpeg" alt="Placeholder" />
+            </div>
+            <div class="description bg-white p-8">
+              <h2 class="text-xl font-bold">Item 1</h2>
+              <p class="text-xs text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                lectus non nunc consectetur elementum. Donec in purus vel velit
+                malesuada fermentum.
+              </p>
+              <button
+                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div
+            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+          >
+            <div class="img">
+              <img src="./assets/2.jpeg" alt="Placeholder" />
+            </div>
+            <div class="description bg-white p-8">
+              <h2 class="text-xl font-bold">Item 1</h2>
+              <p class="text-xs text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                lectus non nunc consectetur elementum. Donec in purus vel velit
+                malesuada fermentum.
+              </p>
+              <button
+                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div
+            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+          >
+            <div class="img">
+              <img src="./assets/3.jpeg" alt="Placeholder" />
+            </div>
+            <div class="description bg-white p-8">
+              <h2 class="text-xl font-bold">Item 1</h2>
+              <p class="text-xs text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                lectus non nunc consectetur elementum. Donec in purus vel velit
+                malesuada fermentum.
+              </p>
+              <button
+                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div
+            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+          >
+            <div class="img">
+              <img src="./assets/4.jpeg" alt="Placeholder" />
+            </div>
+            <div class="description bg-white p-8">
+              <h2 class="text-xl font-bold">Item 1</h2>
+              <p class="text-xs text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                lectus non nunc consectetur elementum. Donec in purus vel velit
+                malesuada fermentum.
+              </p>
+              <button
+                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div
+            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+          >
+            <div class="img">
+              <img src="./assets/5.jpeg" alt="Placeholder" />
+            </div>
+            <div class="description bg-white p-8">
+              <h2 class="text-xl font-bold">Item 1</h2>
+              <p class="text-xs text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                lectus non nunc consectetur elementum. Donec in purus vel velit
+                malesuada fermentum.
+              </p>
+              <button
+                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
