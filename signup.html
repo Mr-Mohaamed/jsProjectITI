@@ -73,7 +73,7 @@
     >
       <a
         class="w-full before:absolute font-bold before:bottom-[5px] before:left-0 before:bg-slate-600 before:w-full before:h-[2px] py-7 duration-200 after:bg-white underline-animation relative"
-        href="./index.html"
+        href="#"
         >Home</a
       >
       <a
@@ -88,7 +88,7 @@
       >
     </div>
     <div
-      class="landing-page bg-slate-900 text-white flex flex-col min-h-screen relative overflow-hidden"
+      class="landing-page bg-slate-900 text-white flex flex-col min-h-screen relative"
     >
       <nav class="bg-transparent h-16 flex items-center">
         <div
@@ -101,7 +101,7 @@
             <div class="links flex gap-6">
               <a
                 class="py-3 duration-200 after:bg-white underline-animation relative"
-                href="./index.html"
+                href="#"
                 >Home</a
               >
               <a
@@ -143,127 +143,142 @@
           </div>
         </div>
       </nav>
-      <div class="container m-auto flex flex-1 justify-center items-center">
-        <div class="description flex flex-col justify-center w-4/5 xl:w-3/5">
-          <h1 class="text-4xl font-bold text-center">
-            Welcome to Project Components
-          </h1>
-          <p class="text-lg text-center mt-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-            lectus non nunc consectetur elementum. Donec in purus vel velit
-            malesuada fermentum.
-          </p>
-        </div>
-      </div>
       <div
-        class="absolute z-30 rounded-full cursor opacity-0 transition duration-500"
-      ></div>
-    </div>
-    <div class="items-section min-h-screen">
-      <div class="container m-auto flex justify-center items-center">
+        class="container mx-auto flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute"
+      >
         <div
-          class="items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-16 gap-y-16 justify-items-center sm:gap-6 xl:w-4/5"
+          class="form flex items-center justify-center w-full 2xl:w-4/5 bg-slate-900 border-[#D8C4B6] border-2 rounded-lg relative overflow-hidden"
         >
           <div
-            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
-          >
-            <div class="img">
-              <img src="./assets/1.jpeg" alt="Placeholder" />
-            </div>
-            <div class="description bg-white p-8">
-              <h2 class="text-xl font-bold">Item 1</h2>
-              <p class="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                lectus non nunc consectetur elementum. Donec in purus vel velit
-                malesuada fermentum.
-              </p>
-              <button
-                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
-              >
-                Learn More
-              </button>
-            </div>
-          </div>
+            id="wall"
+            class="wall hidden sm:block absolute w-1/2 h-full left-0 top-0 z-20 bg-[#D8C4B6] animate wall-right"
+          ></div>
           <div
-            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+            id="wall-small"
+            class="wall block sm:hidden absolute w-full h-full left-0 top-0 z-20 bg-[#D8C4B6] animate wall-right"
+          ></div>
+          <form
+            id="login-form"
+            class="hidden sm:block flex-1 p-8 relative z-10 opened"
+            action=""
           >
-            <div class="img">
-              <img src="./assets/2.jpeg" alt="Placeholder" />
-            </div>
-            <div class="description bg-white p-8">
-              <h2 class="text-xl font-bold">Item 1</h2>
-              <p class="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                lectus non nunc consectetur elementum. Donec in purus vel velit
-                malesuada fermentum.
-              </p>
+            <div class="flex flex-col gap-6">
+              <label for="name" class="text-sm font-bold">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="text-black p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none focus:border-slate-900"
+              />
+              <label for="email" class="text-sm font-bold">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="text-black p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none focus:border-slate-900"
+              />
+              <label for="password" class="text-sm font-bold">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                class="text-black p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none focus:border-slate-900"
+              />
               <button
-                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+                type="submit"
+                class="px-8 py-2 border-white border-2 font-bold rounded-lg bg-white text-slate-900"
               >
-                Learn More
+                Sign Up
               </button>
+              <div class="controllers">
+                <div class="description flex justify-between">
+                  <p class="mt-4 text-sm text-gray-600">
+                    Create New Account..!&nbsp;
+                    <a
+                      id="signup-btn"
+                      class="text-gray-400 hover:text-white"
+                      href="./login.html"
+                      >Register</a
+                    >
+                  </p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <p class="mt-2 text-sm text-gray-600">
+                    <a class="text-gray-400 hover:text-white" href="#"
+                      >Forgot Password?</a
+                    >
+                  </p>
+                  <p class="text-gray-400 mt-2 text-sm hover:text-white">
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
+          </form>
+          <form
+            id="signup-form"
+            class="hidden sm:block flex-1 p-8 relative z-10"
+            action=""
           >
-            <div class="img">
-              <img src="./assets/3.jpeg" alt="Placeholder" />
-            </div>
-            <div class="description bg-white p-8">
-              <h2 class="text-xl font-bold">Item 1</h2>
-              <p class="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                lectus non nunc consectetur elementum. Donec in purus vel velit
-                malesuada fermentum.
-              </p>
+            <div class="flex flex-col gap-6">
+              <label for="name" class="text-sm font-bold">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="text-black p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none focus:border-slate-900"
+              />
+              <label for="email" class="text-sm font-bold">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="text-black p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none focus:border-slate-900"
+              />
+              <label for="password" class="text-sm font-bold">Password:</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                class="text-black p-2 w-full border-2 border-gray-300 rounded-lg focus:outline-none focus:border-slate-900"
+              />
               <button
-                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
+                type="submit"
+                class="px-8 py-2 border-white border-2 font-bold rounded-lg bg-white text-slate-900"
               >
-                Learn More
+                Sign Up
               </button>
+              <div class="controllers">
+                <div class="description flex justify-between">
+                  <p class="mt-4 text-sm text-gray-600">
+                    Already have an account?&nbsp;
+                    <a
+                      id="login-btn"
+                      class="text-gray-400 hover:text-white"
+                      href="./login.html"
+                      >Sign In</a
+                    >
+                  </p>
+                </div>
+                <div class="flex justify-between items-center">
+                  <p class="mt-2 text-sm text-gray-600">
+                    <a class="text-gray-400 hover:text-white" href="#"
+                      >Forgot Password?</a
+                    >
+                  </p>
+                  <p class="text-gray-400 mt-2 text-sm hover:text-white">
+                    <a href="#">Privacy Policy</a>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div
-            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
-          >
-            <div class="img">
-              <img src="./assets/4.jpeg" alt="Placeholder" />
-            </div>
-            <div class="description bg-white p-8">
-              <h2 class="text-xl font-bold">Item 1</h2>
-              <p class="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                lectus non nunc consectetur elementum. Donec in purus vel velit
-                malesuada fermentum.
-              </p>
-              <button
-                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
-              >
-                Learn More
-              </button>
-            </div>
-          </div>
-          <div
-            class="item-card shadow-md rounded-lg overflow-hidden w-4/5 sm:w-full sm:gap-6"
-          >
-            <div class="img">
-              <img src="./assets/5.jpeg" alt="Placeholder" />
-            </div>
-            <div class="description bg-white p-8">
-              <h2 class="text-xl font-bold">Item 1</h2>
-              <p class="text-xs text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                lectus non nunc consectetur elementum. Donec in purus vel velit
-                malesuada fermentum.
-              </p>
-              <button
-                class="w-full px-8 py-2 mt-4 border-slate-900 border-2 font-bold rounded-lg bg-slate-900 text-white"
-              >
-                Learn More
-              </button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

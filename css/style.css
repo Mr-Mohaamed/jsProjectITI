@@ -114,3 +114,41 @@
 .fixed-nav.active {
   transform: translateY(0);
 }
+
+.wall-right {
+  transform: translateX(100%);
+}
+.wall-left {
+  transform: translateX(-100%);
+}
+
+.animate {
+  transition: 0.7s;
+}
+
+.opened {
+  display: block !important;
+}
+
+.landing-page {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      49% 81% at 45% 47%,
+      #321038ff 0%,
+      #073aff00 100%
+    ),
+    radial-gradient(113% 91% at 17% -2%, #140030ff 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 83% 7%, #06052bff 1%, #ff000000 99%),
+    radial-gradient(142% 91% at -6% 74%, #1b052eff 1%, #9e00ec00 99%),
+    radial-gradient(142% 91% at 111% 84%, #090120ff 0%, #030079ff 100%);
+}
+
+.cursor {
+  box-shadow: 0 0 40px 40px rgba(103, 1, 211, 0.5),
+    0 0 20px 20px rgba(86, 1, 178, 0.25), 0 0 20px 20px rgba(39, 1, 80, 0);
+}
+
+.cursor.active {
+  opacity: 1;
+}
